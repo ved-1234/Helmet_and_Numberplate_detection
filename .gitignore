@@ -1,0 +1,13 @@
+/venv/
+myenv/
+weights/
+*.pt
+
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/HelmetWebsite.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+./.idea
+/.idea/vcs.xml

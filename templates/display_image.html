@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Processed Image</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F1DEDE; /* Light background color */
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        .btn-actions {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Processed Image</h1>
+
+        <!-- Display the processed image -->
+        <div class="image-container">
+            <img src="{{ image }}" alt="Processed Image" class="img-fluid rounded">
+        </div>
+
+        <!-- Buttons for results and back to upload page -->
+        <div class="text-center btn-actions">
+            <!-- View Results button -->
+            <a href="{{ url_for('results') }}" class="btn btn-primary">View Results</a>
+
+            <!-- Back to Upload button -->
+            <a href="{{ url_for('upload_image') }}" class="btn btn-secondary ml-3">Back to Upload</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

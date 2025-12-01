@@ -1,7 +1,6 @@
 /venv/
 myenv/
-weights/
-*.pt
+
 
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/HelmetWebsite.iml

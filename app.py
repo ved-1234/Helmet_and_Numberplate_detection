@@ -4,6 +4,9 @@ import math
 import os
 import requests
 from ultralytics import YOLO
+import dotenv
+
+dotenv.load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -20,7 +23,8 @@ os.makedirs(os.path.join(output_dir, "plates"), exist_ok=True)
 
 # Plate Recognizer API details
 PLATE_RECOGNIZER_URL = 'https://api.platerecognizer.com/v1/plate-reader/'
-PLATE_RECOGNIZER_TOKEN = '99cfc569d4249c3bb1c289d92a2dae77af7fe319'
+PLATE_RECOGNIZER_TOKEN = os.getenv("PLATE_RECOGNIZER_TOKEN")
+
 regions = ["mx", "in"]  # Regions for plate detection (e.g., "in" for India)
 
 def recognize_plate(plate_image_path):

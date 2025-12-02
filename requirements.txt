@@ -1,6 +1,6 @@
-Flask
-opencv-python
-requests
+flask
 ultralytics
-numpy
+opencv-python-headless
+requests
+python-dotenv
 gunicorn
